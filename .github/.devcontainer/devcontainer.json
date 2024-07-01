@@ -1,3 +1,18 @@
 {
-  "image": "ghcr.io/andreilgeorgescu/", #TODO
+  "image": "ghcr.io/andreilgeorgescu/devcontainer-base:1",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/haskell:2": {
+      "ghcVersion": "9.4.8",
+      "cabalVersion": "3.10.3.0",
+      "globalPackages": "hakyll",
+      "downgradeGhcToSupportHls": false,
+      "installStack": false,
+      "installStackGHCupHook": false
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["haskell.haskell"]
+    }
+  }
 }
